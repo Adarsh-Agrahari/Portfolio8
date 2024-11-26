@@ -30,6 +30,41 @@
 	line-height: 1.5;
 }
 
+.highlights {
+	margin-top: 40px;
+	padding: 20px;
+	background-color: #f9f9f9;
+	border-left: 5px solid #4e22ff;
+	border-radius: 5px;
+}
+
+.highlights h2 {
+	font-size: 1.8rem;
+	margin-bottom: 15px;
+	color: #4e22ff;
+}
+
+.highlights ul {
+	list-style: none;
+	padding: 0;
+}
+
+.highlights li {
+	font-size: 1.2rem;
+	margin-bottom: 10px;
+	line-height: 1.5;
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+}
+
+.highlights li::before {
+	content: "•";
+	font-size: 1.5rem;
+	color: #4e22ff;
+	line-height: 1;
+}
+
 @media screen and (max-width: 1200px) {
 	.aboutContainer {
 		margin: 20px 20px;

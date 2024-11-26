@@ -3,7 +3,7 @@ import Head from "next/head";
 import styles from "@/styles/About.module.css";
 import { QuickLinks } from "@/components/QuickLinks";
 
-export default function About({ aboutData = [] }) {
+export default function About({ aboutData = [], highlights = [] }) {
 	return (
 		<div className={styles.aboutContainer}>
 			<Head>
@@ -20,6 +20,16 @@ export default function About({ aboutData = [] }) {
 					) : (
 						<p>No information available at the moment.</p>
 					)}
+				</div>
+
+				{/* Key Highlights Section */}
+				<div className={styles.highlights}>
+					<h2>Key Highlights</h2>
+					<ul>
+						{highlights.map((point, index) => (
+							<li key={index}>{point}</li>
+						))}
+					</ul>
 				</div>
 			</div>
 			<div className={styles.sidebar}>
@@ -39,13 +49,20 @@ export async function getServerSideProps() {
 			"When I'm not driving innovation in the tech world, I enjoy mentoring teams, exploring cutting-edge methodologies, and staying ahead of industry trends.",
 		];
 
+		const highlights = [
+			"Expertise in retail banking and mortgage solutions.",
+			"Skilled in agile practices, risk management, and business transformation.",
+			"Proven leadership in managing global, cross-functional teams.",
+			"Deep technical acumen in tools like Confluence, JIRA, SQL Server, and more.",
+		];
+
 		return {
-			props: { aboutData },
+			props: { aboutData, highlights },
 		};
 	} catch (error) {
 		console.error("Error fetching about data:", error);
 		return {
-			props: { aboutData: [] },
+			props: { aboutData: [], highlights: [] },
 		};
 	}
 }
