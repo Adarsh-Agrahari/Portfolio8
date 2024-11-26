@@ -20,10 +20,10 @@ export const Footer = () => {
 				<div className={styles.socialSection}>
 					<h3 className={styles.heading}>Follow Me</h3>
 					<div className={styles.socialIcons}>
-						<Link href="https://www.linkedin.com/in/purushotham-reddy-8aaa8b12">
+						<Link href="https://www.linkedin.com/in/suprit-pattanayak-4b9b0010">
 							<FaLinkedin /> LinkedIn
 						</Link>
-						<Link href="https://scholar.google.com/citations?user=EaWd2X0AAAAJ&hl=en&authuser=2">
+						<Link href="https://scholar.google.com/citations?user=PKfwqd0AAAAJ&hl=en">
 							<FaGoogleScholar /> Google Scholar
 						</Link>
 					</div>
