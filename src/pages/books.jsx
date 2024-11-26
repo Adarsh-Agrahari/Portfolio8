@@ -8,14 +8,6 @@ export default function Books({ books = [] }) {
 		<div className={styles.booksContainer}>
 			<Head>
 				<title>Suprit Pattanayak</title>
-				<meta
-					name="description"
-					content="Explore books authored by a seasoned professional on topics like AI, business intelligence, and more."
-				/>
-				<meta
-					name="keywords"
-					content="Books, AI, Business Intelligence, Published Books, AI Strategy"
-				/>
 				<meta name="author" content="Your Name" />
 			</Head>
 			<div className={styles.booksContent}>
@@ -53,8 +45,8 @@ export async function getServerSideProps() {
 	try {
 		const books = [
 			{
-				title: "Edge To Cloud AI: Integrating Intelligent Systems Across Distributed Environments",
-				link: "https://www.amazon.com/dp/B0DMJVHB7N?ref=cm_sw_r_ffobk_cso_wa_apin_dp_T3G72N2R3Z5QHGS0QPSE&ref_=cm_sw_r_ffobk_cso_wa_apin_dp_T3G72N2R3Z5QHGS0QPSE&social_share=cm_sw_r_ffobk_cso_wa_apin_dp_T3G72N2R3Z5QHGS0QPSE&peakEvent=2&starsLeft=1&skipTwisterOG=1&bestFormat=true",
+				title: "AI & Gen AI: Bridging Tech and Business",
+				link: "https://www.amazon.com/dp/B0DKF3B6SQ?ref=ppx_yo2ov_dt_b_fed_asin_title",
 				image: "img/book.jpg",
 			},
 		];
