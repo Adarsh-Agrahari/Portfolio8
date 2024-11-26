@@ -1,7 +1,7 @@
 .footer {
 	background-color: #ddd;
 	color: black;
-	padding: 40px 20px;
+	padding: 20px 20px;
 	font-family: "Poppins", sans-serif;
 }
 
@@ -23,7 +23,7 @@
 .logo {
 	font-size: 2rem;
 	color: #4e22ff;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 
 .tagline {
@@ -85,7 +85,7 @@
 	text-align: center;
 	margin-top: 30px;
 	border-top: 1px solid #333;
-	padding-top: 20px;
+	padding-top: 10px;
 	font-size: 0.9rem;
 	color: #888;
 }
