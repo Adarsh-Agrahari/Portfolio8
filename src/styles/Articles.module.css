@@ -1,0 +1,140 @@
+.articleContainer {
+	margin: 0 15%;
+	margin-top: 100px;
+	min-height: 90vh;
+	display: flex;
+}
+
+.articleContent {
+	width: 100%;
+	padding: 20px;
+	font-size: 1.7rem;
+}
+
+.articlelist {
+	position: relative;
+	padding: 15px;
+	margin-left: 40px;
+}
+
+.articlelist::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 4px;
+	height: 92%;
+	background-color: black;
+	transform: translateY(-50%);
+}
+.card {
+	background-color: #fff;
+	padding: 10px;
+	display: flex;
+	gap: 30px;
+	margin: 20px 0;
+	border-radius: 12px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	position: relative;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card::before {
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background-color: #007acc;
+	top: 50%;
+	left: -25px;
+	transform: translateY(-50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+.cardText {
+	width: inherit;
+}
+
+.title {
+	font-size: 1.6rem;
+	color: #333;
+	margin-bottom: 12px;
+	font-weight: bold;
+	line-height: 1.4;
+}
+
+.linkBox {
+	border: 1px solid #ddd;
+	margin: 16px 0;
+	width: inherit;
+	overflow: hidden;
+	font-size: 1.1rem;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	overflow: hidden;
+	padding: 12px;
+	background-color: #f9f9f9;
+	border-radius: 8px;
+	transition: background-color 0.3s ease;
+}
+
+.linkBox:hover {
+	background-color: #e6f7ff;
+}
+
+.linkBox a {
+	color: #007acc;
+	text-decoration: none;
+	font-weight: bold;
+	transition: color 0.3s ease;
+}
+
+.linkBox a:hover {
+	color: #005fa3;
+	text-decoration: underline;
+}
+
+.year {
+	font-size: 1.1rem;
+	color: #888;
+	margin-top: 8px;
+	font-style: italic;
+}
+.cardImage {
+	width: 250px;
+}
+@media screen and (max-width: 1200px) {
+	.articleContainer {
+		margin: 20px 20px;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	.articleContainer {
+		flex-direction: column;
+	}
+
+	.articleContent {
+		width: 100%;
+		padding: 0;
+	}
+
+	.sidebar {
+		width: 100%;
+	}
+
+	.articlelist {
+		margin-left: 0;
+	}
+}

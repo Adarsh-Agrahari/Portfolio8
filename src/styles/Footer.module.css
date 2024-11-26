@@ -1,0 +1,104 @@
+.footer {
+	background-color: #ddd;
+	color: black;
+	padding: 40px 20px;
+	font-family: "Poppins", sans-serif;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	max-width: 1200px;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.logoSection {
+	flex: 2;
+	text-align: left;
+}
+
+.logo {
+	font-size: 2rem;
+	color: #4e22ff;
+	margin-bottom: 10px;
+}
+
+.tagline {
+	font-size: 1rem;
+	line-height: 1.5;
+	color: black;
+}
+
+.linksSection {
+	flex: 1;
+	text-align: left;
+}
+
+.heading {
+	font-size: 1.2rem;
+	margin-bottom: 15px;
+	color: #4e22ff;
+}
+
+.links {
+	list-style: none;
+	padding: 0;
+}
+
+.links li {
+	margin-bottom: 10px;
+}
+
+.links li a {
+	text-decoration: none;
+	color: black;
+	transition: color 0.3s;
+}
+
+.links li a:hover {
+	color: #ff5722;
+}
+
+.socialSection {
+	flex: 1;
+	text-align: left;
+}
+
+.socialIcons {
+	display: flex;
+	gap: 15px;
+	margin-top: 15px;
+}
+
+.icon {
+	font-size: 2rem;
+}
+
+.icon:hover {
+	color: black;
+}
+
+.footerBottom {
+	text-align: center;
+	margin-top: 30px;
+	border-top: 1px solid #333;
+	padding-top: 20px;
+	font-size: 0.9rem;
+	color: #888;
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.logoSection,
+	.linksSection,
+	.socialSection {
+		flex: none;
+	}
+}

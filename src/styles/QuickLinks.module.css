@@ -1,0 +1,53 @@
+.quickLinks {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	max-width: 1200px;
+	gap: 40px;
+	flex-direction: column;
+	background-color: white;
+	padding: 30px;
+	border-radius: 20px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin-right: 40px;
+}
+
+.quickLinks h1 {
+	font-size: 2.5rem;
+}
+
+.quickLinks li {
+	font-size: 1.2rem;
+	padding: 8px 0;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.quickLinks a {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	color: #333;
+	text-decoration: none;
+}
+
+.quickLinks a:hover {
+	text-decoration: underline;
+}
+
+.topPost {
+	margin-top: 20px;
+	background-color: #e3e3e3;
+	padding: 15px;
+	border-radius: 20px;
+}
+
+.topPost h2 {
+	font-size: 2rem;
+}
+
+.topPost p {
+	font-size: 20px;
+	padding: 20px 0;
+}
