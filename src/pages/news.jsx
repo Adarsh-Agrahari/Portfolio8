@@ -8,14 +8,6 @@ export default function News({ articles = [] }) {
 		<div className={styles.newsContainer}>
 			<Head>
 				<title>Suprit Pattanayak - News</title>
-				<meta
-					name="description"
-					content="Stay updated with the latest news and insights from Suprit Pattanayak on AI, business intelligence, and more."
-				/>
-				<meta
-					name="keywords"
-					content="News, AI, Business Intelligence, Technology Insights, Industry Updates"
-				/>
 				<meta name="author" content="Your Name" />
 			</Head>
 			<div className={styles.newsContent}>
@@ -27,7 +19,7 @@ export default function News({ articles = [] }) {
 								<Link
 									href={article.link}
 									className={styles.newsLink}
-                  target="_blank"
+									target="_blank"
 								>
 									<img
 										src={article.image}
@@ -53,9 +45,14 @@ export async function getServerSideProps() {
 	try {
 		const articles = [
 			{
-				title: "AI Unlocked: Suprit Pattanayak’s published guide to transforming fintech with AI and cloud computing",
-				link: "https://www.digitaljournal.com/tech-science/ai-unlocked-purushotham-reddys-published-guide-to-transforming-fintech-with-ai-and-cloud-computing/article",
-				image: "img/news.jpg",
+				title: "Revolutionizing Business with AI: Suprit Kumar Pattanayak Unveils Groundbreaking Insights in New Book",
+				link: "https://www.laweekly.com/revolutionizing-business-with-ai-suprit-kumar-pattanayak-unveils-groundbreaking-insights-in-new-book",
+				image: "img/news1.png",
+			},
+			{
+				title: "Leadership, Learning, and Life: The Remarkable Journey of Suprit Kumar Pattanayak",
+				link: "https://nyweekly.com/leadership/the-remarkable-journey-of-suprit-kumar-pattanayak/",
+				image: "img/news2.png",
 			},
 		];
 
