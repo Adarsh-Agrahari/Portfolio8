@@ -16,7 +16,7 @@ export default function Navbar() {
 	return (
 		<nav className={styles.navbar}>
 			<div className={styles.logo}>
-				<Link href="/">PR</Link>
+				<Link href="/">SKP</Link>
 			</div>
 			<div className={styles.navLinks}>
 				<Link href="/"> Home </Link>
