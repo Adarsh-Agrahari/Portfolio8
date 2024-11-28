@@ -8,14 +8,6 @@ export default function Articles({ articles = [] }) {
 		<div className={styles.articleContainer}>
 			<Head>
 				<title>Suprit Pattanayak</title>
-				<meta
-					name="description"
-					content="Explore articles on topics like AI, cloud computing, ERP integration, and more. Authored by a seasoned professional with expertise in Oracle ERP and emerging technologies."
-				/>
-				<meta
-					name="keywords"
-					content="AI, Oracle ERP, Cloud Computing, Machine Learning, Big Data, Articles, Research"
-				/>
 				<meta name="author" content="Your Name" />
 			</Head>
 			<div className={styles.articleContent}>
@@ -61,94 +53,82 @@ export async function getServerSideProps() {
 	try {
 		const articles = [
 			{
-				title: "Integrating edge computing with advanced cloud computing: A paradigm shift for IoT applications",
-				link: "https://wjarr.com/sites/default/files/WJARR-2019-0036.pdf",
+				title: "Transforming business consulting through generative AI: A framework for enhanced strategic decision-making and value creation",
+				link: "https://wjarr.com/sites/default/files/WJARR-2019-0031.pdf",
 				year: "2019",
-				image: "img/paper1.jpg",
+				image: "img/paper/paper1.jpg",
 			},
 			{
-				title: "Optimizing Database Replication Strategies through Machine Learning for Enhanced Fault Tolerance in Cloud-Based Environments",
-				link: "https://revistadecineforum.com/index.php/cf/article/view/178/145",
-				year: "2023",
-				image: "img/paper2.jpg",
+				title: "Generative AI in Business Consulting: Analyzing its Impact on Client Engagement and Service Delivery Models",
+				link: "https://erpublications.com/uploaded_files/download/suprit-kumar-pattanayak_UjLaB.pdf",
+				year: "2020",
+				image: "img/paper/paper2.jpg",
 			},
 			{
-				title: "Cognitive Cloud Computing: Harnessing AI to Enable Proactive Fault Prediction and Resource Allocation in Complex Cloud Systems",
-				link: "https://welltestingjournal.com/index.php/WT/article/view/112",
+				title: "Leveraging Generative AI for Enhanced Market Analysis: A New Paradigm for Business Consulting",
+				link: "https://www.ijaresm.com/uploaded_files/document_file/Suprit_Kumar_PattanayakdMFg.pdf",
+				year: "2021",
+				image: "img/paper/paper3.jpg",
+			},
+			{
+				title: "Navigating Ethical Challenges in Business Consulting with Generative AI: Balancing Innovation and Responsibility",
+				link: "https://erpublications.com/uploaded_files/download/suprit-kumar-pattanayak_YBJGu.pdf",
+				year: "2021",
+				image: "img/paper/paper4.jpg",
+			},
+			{
+				title: "The Impact of Artificial Intelligence on Operational Efficiency in Banking: A Comprehensive Analysis of Automation and Process Optimization",
+				link: "https://www.irjet.net/archives/V8/i10/IRJET-V8I10315.pdf",
+				year: "2021",
+				image: "img/paper/paper5.jpg",
+			},
+			{
+				title: "Generative AI for Market Analysis in Business Consulting: Revolutionizing Data Insights and Competitive Intelligence",
+				link: "https://www.erpublications.com/uploaded_files/download/suprit-kumar-pattanayak_cFzEy.pdf",
 				year: "2022",
-				image: "img/paper3.jpg",
+				image: "img/paper/paper6.jpg",
 			},
 			{
-				title: "Leveraging Generative AI for Automated Test Case Generation: A Framework for Enhanced Coverage and Defect Detection",
-				link: "https://welltestingjournal.com/index.php/WT/article/view/110",
+				title: "The Impact of Generative AI on Business Consulting Engagements: A New Paradigm for Client Interaction and Value Creation",
+				link: "https://www.ijaresm.com/uploaded_files/document_file/Suprit_Kumar_Pattanayak,jcsC.pdf",
 				year: "2023",
-				image: "img/paper4.jpg",
+				image: "img/paper/paper7.jpg",
 			},
 			{
-				title: "Intelligent Data Replication Strategies: Using AI to Enhance Fault Tolerance and Performance in Multi-Node Database Systems",
-				link: "https://welltestingjournal.com/index.php/WT/article/view/111",
+				title: "Integrating AI into DevOps pipelines: Continuous integration, continuous delivery, and automation in infrastructural management: Projections for future",
+				link: "https://ijsra.net/sites/default/files/IJSRA-2024-1838.pdf",
+				year: "2024",
+				image: "img/paper/paper8.jpg",
+			},
+			{
+				title: "Leveraging machine learning for intelligent test automation: Enhancing efficiency and accuracy in software testing",
+				link: "https://ijsra.net/sites/default/files/IJSRA-2021-0027.pdf",
+				year: "2021",
+				image: "img/paper/paper9.jpg",
+			},
+			{
+				title: "AI-Driven Innovations in Cloud Computing: Transforming Scalability, Resource Management, and Predictive Analytics in Distributed Systems",
+				link: "https://www.irjmets.com/uploadedfiles/paper//issue_12_december_2023/47900/final/fin_irjmets1728654918.pdf",
 				year: "2023",
-				image: "img/paper5.jpg",
+				image: "img/paper/paper10.jpg",
 			},
 			{
 				title: "Artificial Intelligence for Self-Healing Automation Testing Frameworks: Real-Time Fault Prediction and Recovery",
 				link: "https://revistadecineforum.com/index.php/cf/article/view/177/144",
 				year: "2024",
-				image: "img/paper6.jpg",
+				image: "img/paper/paper11.jpg",
 			},
 			{
-				title: "Measuring the Impact of DevOps Culture on Organizational Performance: An Empirical Study ",
-				link: "https://tijer.org/tijer/papers/TIJER2008003.pdf",
-				year: "2020",
-				image: "img/paper7.jpg",
-			},
-			{
-				title: "Incident Response in AWS: Developing a Framework for Effective Cybersecurity Management",
-				link: "https://erpublications.com/uploaded_files/download/purushotham-reddy_trnul.pdf",
-				year: "2021",
-				image: "img/paper8.jpg",
-			},
-			{
-				title: "AI-Driven Predictive Maintenance in IoT-Enabled Industrial Systems",
-				link: "https://www.irejournals.com/formatedpaper/1701235.pdf",
-				year: "2019",
-				image: "img/paper9.jpg",
-			},
-			{
-				title: "Scalable Machine Learning Models for IoT Data Analytics in Cloud Environments",
-				link: "https://tijer.org/tijer/papers/TIJER2011003.pdf",
-				year: "2020",
-				image: "img/paper10.jpg",
-			},
-			{
-				title: "Securing The Cloud: A Comprehensive Framework For Enhancing Cybersecurity In Cloud Computing Environments",
-				link: "https://tijer.org/tijer/papers/TIJER2311126.pdf",
-				year: "2023",
-				image: "img/paper11.jpg",
-			},
-			{
-				title: "Deep Learning Architectures For Enhanced Predictive Analytics: Innovations And Applications In Ai And Ml",
-				link: "https://tijer.org/tijer/papers/TIJER2201004.pdf",
+				title: "Transfer Learning in Natural Language Processing: Overcoming Low-Resource Challenges",
+				link: "https://erpublications.com/uploaded_files/download/thejaswi-adimulam-swetha-chinta-suprit-kumar-pattanayak_ImVmG.pdf",
 				year: "2022",
-				image: "img/paper12.jpg",
+				image: "img/paper/paper12.jpg",
 			},
 			{
-				title: "AI and Edge Computing: Synergistic Approaches for Real-time Data Processing in Cloud Environments",
-				link: "https://www.irejournals.com/formatedpaper/1704084.pdf",
+				title: "Federated Learning for Privacy-Preserving AML in Multi-Bank Collaborations",
+				link: "https://tijer.org/tijer/papers/TIJER2311128.pdf",
 				year: "2023",
-				image: "img/paper13.jpg",
-			},
-			{
-				title: "Serverless Computing: Optimizing Resource Utilization and Cost-Efficiency in Modern Cloud Architectures",
-				link: "https://www.jetir.org/papers/JETIR2302608.pdf",
-				year: "2023",
-				image: "img/paper14.jpg",
-			},
-			{
-				title: "The Role of AI in Continuous Integration and Continuous Deployment (CI/CD) Pipelines: Enhancing Performance and Reliability",
-				link: "https://www.irjet.net/archives/V8/i10/IRJET-V8I10314.pdf",
-				year: "2021",
-				image: "img/paper15.jpg",
+				image: "img/paper/paper13.jpg",
 			},
 		];
 		return {
